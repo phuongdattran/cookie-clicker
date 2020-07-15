@@ -8,19 +8,30 @@
     <title>Cookie Clicker</title>
   </head>
   <body>
+    <!--debut header -->
     <header>
-      <div id="label">0</div>
-      <button type="button" id="multi">
+      <!-- banner -->
+      <div class="banner">
+        <h1>Cookie Clicker</h1>
+      </div>
+      <!--label pour le score  -->
+      <div class="header">
+        <div id="label">0</div>
+      </div>
+      <button type="button" id="multi" class="glow-on-hover">
         Multiplier
       </button>
       <div id="cost"></div>
     </header>
 
-    <button type="button" id="auto">Autoclicker</button>
-    <button type="button" id="bonus">Bonus</button>
-    <button type="button" id="click">
-      <img src=img/cookie1.png>
-    </button>
+    <section class="buttons">
+      <button type="button" id="auto" class="glow-on-hover">Autoclicker</button>
+      <button type="button" id="bonus" class="glow-on-hover">Bonus</button>
+      <button type="button" id="click" class="glow-on-1">
+        <img src=img/cookie1.png>
+      </button>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
+<button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button>
