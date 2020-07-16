@@ -1,3 +1,21 @@
+@media all and (max-width: 1024px) {
+  img {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  img {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+  }
+}
+
+header {
+  text-align: center;
+}
 body {
   background-color: teal;
 }
@@ -15,6 +33,34 @@ h1 {
 h1:hover {
   color: black;
 }
+.header {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  border-bottom: solid 1px white;
+  margin-bottom: 30px;
+}
+.but {
+  margin: 50px;
+  text-align: center;
+}
+img {
+  width: 80%;
+  height: 80%;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+#cost {
+  font-size: 30px;
+}
+#label {
+  font-weight: 800;
+  font-size: 70px;
+}
+
 .glow-on-hover {
   width: 220px;
   height: 50px;
@@ -101,6 +147,7 @@ h1:hover {
   position: relative;
   z-index: 0;
   border-radius: 50%;
+  margin: 20px;
 }
 
 .glow-on-1:before {
@@ -166,28 +213,21 @@ h1:hover {
     background-position: 0 0;
   }
 }
-.header {
-  padding: 10px;
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  border-bottom: solid 1px white;
-}
-#label {
-  content: "";
-  color: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-}
 
 .buttons {
+  text-align: center;
+}
+
+// rotation
+
+.rotate {
+  animation: rotation 3s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
