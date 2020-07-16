@@ -7,36 +7,54 @@
 }
 @media screen and (max-width: 992px) {
   img {
-    width: 50%;
-    height: 50%;
+    width: 15%;
+    height: 15%
     text-align: center;
   }
+  .banner {
+    display: none;
+    padding: 0;
+  }
+  .but {
+    margin: 0;
+    text-align: center;
+  }
+  #cost {
+    margin: 0; 
+   }
+  .header{
+      padding: 0px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      border-bottom: solid 1px white;
+      margin-bottom: 0px;
+      background-color: #212121;
+    }
+
 }
-@font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
-}
+
 header {
+  font-family: 'Ranchers', cursive;
   text-align: center;
 }
 body {
+  font-family: 'Ranchers', cursive;
   background-color: teal;
-  font-family: myFirstFont;
+  letter-spacing: 1px;
 }
 .banner {
   padding: 30px;
   text-align: center;
-  background: #212121;
-  color: white;
+   color: white;
   font-size: 30px;
 }
 h1 {
   color: white;
+  letter-spacing: 5px;
+  
 }
 
-h1:hover {
-  color: #002bff;
-}
 .header {
   padding: 10px;
   text-align: center;
@@ -44,6 +62,7 @@ h1:hover {
   font-size: 30px;
   border-bottom: solid 1px white;
   margin-bottom: 30px;
+  background-color: #212121;
 }
 .but {
   margin: 50px;
@@ -62,6 +81,7 @@ button {
   margin-bottom: 50px;
 }
 #label {
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 70px;
 }
