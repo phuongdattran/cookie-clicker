@@ -40,8 +40,11 @@ header {
 }
 body {
   font-family: 'Ranchers', cursive;
-  background-color: teal;
-  letter-spacing: 1px;
+   letter-spacing: 1px;
+  background-image: url("img/stars.svg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 .banner {
   padding: 30px;
@@ -67,6 +70,8 @@ h1 {
 .but {
   margin: 50px;
   text-align: center;
+  display: flex;
+ justify-content: center;
 }
 img {
   width: 80%;
@@ -130,6 +135,10 @@ button {
 .glow-on-hover:active {
   color: #000;
 }
+.glow-on-hover:disabled {
+  color: gray;
+  background: white;
+}
 
 .glow-on-hover:active:after {
   background: transparent;
@@ -145,14 +154,12 @@ button {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #111;
+ 
   left: 0;
   top: 0;
   border-radius: 10px;
 }
-.glow-on-hover:disabled {
-  color: gray;
-}
+
 @keyframes glowing {
   0% {
     background-position: 0 0;
