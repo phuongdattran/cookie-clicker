@@ -1,10 +1,10 @@
 # cookie-clicker
 <p align="center">
   <a href="https://example.com/">
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f76c924368125.56333075b9d10.jpg" alt="Logo" width=120 height=120>
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f76c924368125.56333075b9d10.jpg" alt="Logo" width=200 height=200>
   </a>
 
-  <h3 align="center">Logo</h3>
+
 
   <p align="center">
     Cookie Clicker
