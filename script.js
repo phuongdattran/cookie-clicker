@@ -17,6 +17,9 @@ multi.disabled = true;
 bonus.disabled = true;
 auto.disabled = true;
 
+document.getElementById("costBonus").innerHTML = boostCost;
+document.getElementById("costAuto").innerHTML = autoCost;
+
 click.addEventListener("click", increment);
 multi.addEventListener("click", () => {
   if (parseInt(label.innerHTML) >= multiCost) {
