@@ -129,7 +129,9 @@ button {
   top: 0;
   border-radius: 10px;
 }
-
+glow-on-hover:disabled {
+  color: gray;
+}
 @keyframes glowing {
   0% {
     background-position: 0 0;
