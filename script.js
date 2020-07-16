@@ -5,11 +5,14 @@ let multi = document.getElementById("multi");
 let multiOn = false;
 let multiplier = 2;
 let counterMulti = 1;
+let multiCost = multiplier * counterMulti;
 document.getElementById("cost").innerHTML =
   "Next multiplier cost: " + multiplier * counterMulti;
 let auto = document.getElementById("auto");
 let autoOn = false;
 let bonus = document.getElementById("bonus");
+let boostCost = 100;
+let autoCost = 200;
 
 click.addEventListener("click", increment);
 multi.addEventListener("click", () => {
@@ -17,6 +20,7 @@ multi.addEventListener("click", () => {
     multiOn = true;
     label.innerHTML = parseInt(label.innerHTML) - multiplier * counterMulti;
     counterMulti++;
+    multiCost = multiplier * counterMulti;
     document.getElementById("cost").innerHTML =
       "Next multiplier cost: " + multiplier * counterMulti;
     multi.innerHTML = "Multiplier: X" + multiplier * (counterMulti - 1);
@@ -43,7 +47,6 @@ function increment2() {
 
 auto.addEventListener("click", autoIncrement);
 function autoIncrement() {
-  let autoCost = 200;
   if (parseInt(label.innerHTML) >= autoCost && autoOn == false) {
     autoOn = true;
     label.innerHTML = parseInt(label.innerHTML) - autoCost;
@@ -53,7 +56,6 @@ function autoIncrement() {
 
 bonus.addEventListener("click", boost);
 function boost() {
-  let boostCost = 100;
   if (parseInt(label.innerHTML) >= boostCost) {
     label.innerHTML = parseInt(label.innerHTML) - boostCost;
     click.addEventListener("click", increment2);
@@ -74,3 +76,17 @@ function time(currentTime) {
     }
   }, 1000);
 }
+
+function buttonDisable(button, cost) {
+  setInterval(() => {
+    if (parseInt(label.innerHTML) >= cost) {
+      button.removeAttribute("disabled");
+    } else {
+      button.disabled = true;
+    }
+  }, 100);
+}
+
+buttonDisable(bonus, boostCost);
+buttonDisable(auto, autoCost);
+buttonDisable(multi, multiCost);
