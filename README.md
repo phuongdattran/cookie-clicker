@@ -1,7 +1,7 @@
 # cookie-clicker
 <p align="center">
   <a href="https://example.com/">
-    <img src="https://via.placeholder.com/72" alt="Logo" width=72 height=72>
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f76c924368125.56333075b9d10.jpg" alt="Logo" width=72 height=72>
   </a>
 
   <h3 align="center">Logo</h3>
