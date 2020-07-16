@@ -110,7 +110,7 @@ Bastien Deresteau
 
 ## Thanks
 
-thanks to [Ismaestro](https://github.com/Ismaestro) for the template. 
+thanks to [Ismaestro](https://github.com/Ismaestro) for the README template. 
 
 
 ## Copyright and license
