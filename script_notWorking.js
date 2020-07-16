@@ -13,9 +13,6 @@ let autoOn = false;
 let bonus = document.getElementById("bonus");
 let boostCost = 100;
 let autoCost = 200;
-multi.disabled = true;
-bonus.disabled = true;
-auto.disabled = true;
 
 click.addEventListener("click", increment);
 multi.addEventListener("click", () => {
@@ -77,33 +74,23 @@ function time(currentTime) {
     } else {
       bonus.innerHTML = "Bonus";
     }
-    console.log(bonus.innerHTML);
   }, 1000);
 }
 
 function buttonDisable(button, cost) {
-  if (parseInt(label.innerHTML) >= cost) {
-    button.removeAttribute("disabled");
-  } else {
-    button.disabled = true;
-  }
+  setInterval(() => {
+    if (parseInt(label.innerHTML) >= cost) {
+      button.removeAttribute("disabled");
+    } else {
+      button.disabled = true;
+    }
+  }, 100);
 }
 
-click.addEventListener("click", () => {
-  buttonDisable(multi, multiCost);
-});
-multi.addEventListener("click", () => {
-  buttonDisable(multi, multiCost);
-});
-click.addEventListener("click", () => {
-  buttonDisable(bonus, boostCost);
-});
-bonus.addEventListener("click", () => {
-  buttonDisable(bonus, boostCost);
-});
-click.addEventListener("click", () => {
-  buttonDisable(auto, autoCost);
-});
-auto.addEventListener("click", () => {
-  buttonDisable(auto, autoCost);
-});
+buttonDisable(bonus, boostCost);
+buttonDisable(auto, autoCost);
+buttonDisable(multi, multiCost);
+/*setInterval(() => {
+  console.log("cost: " + multiCost);
+  console.log("score:" + label.innerHTML);
+}, 500);*/
