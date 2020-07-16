@@ -16,13 +16,13 @@ let autoCost = 200;
 
 click.addEventListener("click", increment);
 multi.addEventListener("click", () => {
-  if (parseInt(label.innerHTML) >= multiplier * counterMulti) {
+  if (parseInt(label.innerHTML) >= multiCost) {
     multiOn = true;
-    label.innerHTML = parseInt(label.innerHTML) - multiplier * counterMulti;
+    label.innerHTML = parseInt(label.innerHTML) - multiCost;
     counterMulti++;
     multiCost = multiplier * counterMulti;
     document.getElementById("cost").innerHTML =
-      "Next multiplier cost: " + multiplier * counterMulti;
+      "Next multiplier cost: " + multiCost;
     multi.innerHTML = "Multiplier: X" + multiplier * (counterMulti - 1);
   }
 });
@@ -90,3 +90,7 @@ function buttonDisable(button, cost) {
 buttonDisable(bonus, boostCost);
 buttonDisable(auto, autoCost);
 buttonDisable(multi, multiCost);
+/*setInterval(() => {
+  console.log("cost: " + multiCost);
+  console.log("score:" + label.innerHTML);
+}, 500);*/
