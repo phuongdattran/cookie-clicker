@@ -12,36 +12,41 @@
     <title>Mike Clicker</title>
   </head>
   <body>
-    <!--debut header -->
+<!--debut header -->
     <header>
-      <!--label pour le score  -->
+<!--label pour le score  -->
       <div class="header">
         <div id="label">0</div>
       </div>
-      <!--multiplier button  -->
+<!--multiplier button  -->
       <button type="button" id="multi" class="glow-on-hover">
         Multiplier
       </button>
+<!--cost pour prix du multiplayer -->
       <div id="cost"></div>
+<!--end header -->
     </header>
 
+<!--start section -->
     <section class="buttons">
+<!--boutton click et image -->
       <button type="button" id="click" class="glow-on-1">
         <img class="rotate" src=img/mike.svg alt="mike">
       </button>
     </section>
-
+<!--end section -->
+<!--bouton bonus et cost.  div pour mettre en display flex-->
     <div class="but">
       <div>
         <div id="costBonus"></div>
-        <button type="button" id="bonus" class="glow-on-hover">Bonus</button>
+          <button type="button" id="bonus" class="glow-on-hover">Bonus</button>
       </div>
+<!--bouton autoclicker et cost -->
       <div>
         <div id="costAuto"></div>
-        <button type="button" id="auto" class="glow-on-hover">
-          Autoclicker
-        </button>
-      </div>
+        <button type="button" id="auto" class="glow-on-hover">Autoclicker</button>
+        </div>
+<!--end div but -->
     </div>
     <script src="script.js"></script>
   </body>

@@ -1,3 +1,5 @@
+/* mediaqueries max width 1024 desctop*/
+
 @media all and (max-width: 1024px) {
   img {
     width: 50%;
@@ -5,6 +7,7 @@
     text-align: center;
   }
 }
+/* mediaqueries max width 992 tablet*/
 @media screen and (max-width: 992px) {
   body{
     margin-top: 50px;
@@ -14,14 +17,17 @@
     height: 50%
     text-align: center;
   }
-  
+/* Css by ID*/
+#cost {
+  margin: 0;
+ }
+
+/* Css by class*/
   .but {
     margin: 0;
     text-align: center;
   }
-  #cost {
-    margin: 0; 
-   }
+
   .header{
       padding: 0px;
       text-align: center;
@@ -32,7 +38,7 @@
     }
 
 }
-
+/* mediaqueries max width 600 smartphone*/
 @media only screen and (max-width: 600px) {
   body{
     margin-top: 0px;
@@ -42,20 +48,22 @@
     height: 15%
     text-align: center;
   }
+  /* Css by ID*/
   #label {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 50px;
   }
-  
+  #cost {
+
+    margin-bottom: 0;
+   }
+/* Css by class*/
   .but {
     margin: 0;
     text-align: center;
   }
-  #cost {
-   
-    margin-bottom: 0;
-   }
+
   .header{
       padding: 0px;
       text-align: center;
@@ -70,24 +78,46 @@
 
 }
 /*end mediaqueries*/
+/* Css for all */
 
-header {
-  font-family: 'Ranchers', cursive;
-  text-align: center;
-}
 body {
   font-family: 'Ranchers', cursive;
   letter-spacing: 1px;
   background-color: #1C3C86;
   background-image: url("img/light.png");
 }
-
+/* Css for header */
+header {
+  font-family: 'Ranchers', cursive;
+  text-align: center;
+}
+/* Css for h1 */
 h1 {
   color: white;
   letter-spacing: 5px;
-  
+}
+/* Css for img */
+img {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+/* Css for button */
+button {
+  margin: 20px;
 }
 
+/* Css by ID*/
+#cost {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+}
+/* Css by class */
 .header {
   margin: auto;
   padding: 10px;
@@ -104,24 +134,11 @@ h1 {
   display: flex;
  justify-content: center;
 }
-img {
-  width: 50%;
-  height: 50%;
+
+.buttons {
   text-align: center;
 }
-button {
-  margin: 20px;
-}
-#cost {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-#label {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
-  font-size: 60px;
-}
-
+/* Css for glowbuttons */
 .glow-on-hover {
   font-size: 20px;
   width: 120px;
@@ -187,12 +204,12 @@ button {
   position: absolute;
   width: 100%;
   height: 100%;
- 
+
   left: 0;
   top: 0;
   border-radius: 10px;
 }
-
+/* Css keyframes for glowbutton */
 @keyframes glowing {
   0% {
     background-position: 0 0;
@@ -204,7 +221,7 @@ button {
     background-position: 0 0;
   }
 }
-
+/* Cssfor glow on image click button */
 .glow-on-1 {
   border: none;
   outline: none;
@@ -274,7 +291,7 @@ button {
   top: 0;
   border-radius: 10px;
 }
-
+/* Css keyframes for glow on image click button */
 @keyframes glowing {
   0% {
     background-position: 0 0;
@@ -287,10 +304,7 @@ button {
   }
 }
 
-.buttons {
-  text-align: center;
-}
-
+/* Css keyframes and animation for rotate */
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg) ;
@@ -306,7 +320,7 @@ button {
 #click:hover {
   -webkit-animation: rotate 1s linear infinite;
 }
-
+/* Css animation and keyframes for zoom */
 #click:active {
   -webkit-animation: zoom 1s linear infinite;
 }
