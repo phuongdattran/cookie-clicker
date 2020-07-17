@@ -1,6 +1,6 @@
 # Mike clicker
 
- [Mike clicker](https://phuongdattran.github.io/cookie-clicker/ “Mike Clicker”) 
+ [Mike clicker](https://phuongdattran.github.io/cookie-clicker/) 
 
 
 ## Table of contents
