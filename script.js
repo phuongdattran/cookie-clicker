@@ -91,10 +91,18 @@ function boost() {
 }
 
 function buttonDisable(button, cost) {
-  if (parseInt(label.innerHTML) >= cost && autoOn == false) {
-    button.removeAttribute("disabled");
+  if (button == auto) {
+    if (parseInt(label.innerHTML) >= cost && autoOn == false) {
+      button.removeAttribute("disabled");
+    } else {
+      button.disabled = true;
+    }
   } else {
-    button.disabled = true;
+    if (parseInt(label.innerHTML) >= cost) {
+      button.removeAttribute("disabled");
+    } else {
+      button.disabled = true;
+    }
   }
 }
 
@@ -113,6 +121,3 @@ bonus.addEventListener("click", () => {
 click.addEventListener("click", () => {
   buttonDisable(auto, autoCost);
 });
-/*auto.addEventListener("click", () => {
-  buttonDisable(auto, autoCost);
-});*/
