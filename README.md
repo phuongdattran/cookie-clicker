@@ -70,8 +70,8 @@ Make it so that, if the player doesn’t have the points to purchase a multiplie
 ## Workflow
 
 First, we had a small talk to discuss who's gonna do what. We agreed that Phuong would be project supervisor. 
-Melissa did the CSS part and Phuong focused on the Javascript. It took a lot of time to debug but in the end we managed to do almost everything that we wanted to. Bastien did a bit of CSS and a bit of Javascript as well as the README. 
-Also, Melissa did the order and comments of the CSS and coded the HTML. Finally, Bastien did the SEO and fixed minor bugs in the CSS. 
+Melissa did the CSS and the HTML part and Phuong focused on the Javascript. It took a lot of time to debug but in the end we managed to do almost everything that we wanted to. Bastien did a bit of CSS and a bit of Javascript as well as the README. 
+Also, Melissa did the order and comments of the CSS. Finally, Bastien did the SEO and fixed minor bugs in the CSS. 
 Phuong did not know how to use a function with an eventListener as parametre : one function wich called the original function. 
 
 
