@@ -1,5 +1,4 @@
 /* mediaqueries max width 1024 desctop*/
-
 @media all and (min-width: 1024px) {
   img {
     width: 50%;
@@ -7,7 +6,7 @@
     text-align: center;
   }
   header {
-    margin-top: 150px;
+    margin-top: 10px;
   }
 }
 /* mediaqueries max width 992 tablet*/
@@ -18,7 +17,7 @@
     text-align: center;
   }
   header {
-    margin-top: 100px;
+    margin-top: 10px;
   }
   /* Css by ID*/
   #cost {
@@ -90,6 +89,7 @@ img {
 /* Css for button */
 button {
   margin: 20px;
+  height: 100%;
 }
 
 /* Css by ID*/
