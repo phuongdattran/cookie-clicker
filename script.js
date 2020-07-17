@@ -106,18 +106,10 @@ function buttonDisable(button, cost) {
   }
 }
 
-click.addEventListener("click", () => {
+function disableAll() {
   buttonDisable(multi, multiCost);
-});
-multi.addEventListener("click", () => {
-  buttonDisable(multi, multiCost);
-});
-click.addEventListener("click", () => {
   buttonDisable(bonus, boostCost);
-});
-bonus.addEventListener("click", () => {
-  buttonDisable(bonus, boostCost);
-});
-click.addEventListener("click", () => {
   buttonDisable(auto, autoCost);
-});
+}
+
+setInterval(disableAll, 100);
