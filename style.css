@@ -1,10 +1,13 @@
 /* mediaqueries max width 1024 desctop*/
 
-@media all and (max-width: 1024px) {
+@media all and (min-width: 1024px) {
   img {
     width: 50%;
     height: 50%;
     text-align: center;
+  }
+  header {
+    margin-top: 150px;
   }
 }
 /* mediaqueries max width 992 tablet*/
@@ -13,6 +16,9 @@
     width: 50%;
     height: 50%;
     text-align: center;
+  }
+  header {
+    margin-top: 100px;
   }
   /* Css by ID*/
   #cost {
@@ -30,7 +36,9 @@
   img.rotate {
     width: 150px;
   }
-
+  header {
+    margin-top: 0;
+  }
   /* Css by ID*/
 
   #cost {
@@ -89,7 +97,9 @@ button {
   font-size: 30px;
   margin-bottom: 20px;
 }
+
 #label {
+  display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 60px;
@@ -97,10 +107,16 @@ button {
   text-align: center;
   color: white;
   margin: 0px auto;
+  border-radius: 30px;
   background-color: #212121;
   min-width: 100px;
-  border-radius: 30px;
 }
+
+#multi {
+  display: block;
+  margin: 10px auto;
+}
+
 /* Css by class */
 .but {
   text-align: center;
