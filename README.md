@@ -71,8 +71,8 @@ Make it so that, if the player doesn’t have the points to purchase a multiplie
 
 First, we had a small talk to discuss who's gonna do what. We agreed that Phuong would be project supervisor. 
 Melissa did the CSS part and Phuong focused on the Javascript. It took a lot of time to debug but in the end we managed to do almost everything that we wanted to. Bastien did a bit of CSS and a bit of Javascript as well as the README. 
-Also, Melissa did the order and comments of the CSS. Finally, Bastien did the SEO and fixed minor bugs in the CSS. 
-
+Also, Melissa did the order and comments of the CSS and coded the HTML. Finally, Bastien did the SEO and fixed minor bugs in the CSS. 
+Phuong did not know how to use a function with an eventListener as parametre : one function wich called the original function. 
 
 
 ## Status
@@ -81,13 +81,13 @@ The project is done but we are always open to any kind of suggestions to improve
 
 ## Documentation
 
-{Documentation MDN related to Javascript }  (https://developer.mozilla.org/en-US/docs/Web/JavaScript )
-{Documentation W3C retalted to Javascript}  (https://www.w3schools.com/js/)                                        
-{Link towards the assignment}   (https://github.com/becodeorg/BXL-Swartz-3-21/blob/master/05-Javascript/cookieClicker.md)
+[Documentation MDN related to Javascript ]  (https://developer.mozilla.org/en-US/docs/Web/JavaScript )
+[Documentation W3C retalted to Javascript]  (https://www.w3schools.com/js/)                                        
+[Link towards the assignment]   (https://github.com/becodeorg/BXL-Swartz-3-21/blob/master/05-Javascript/cookieClicker.md)
 
 ## Bugs and feature requests
 
-We encountered several small issues regarding the JS part, such as : a logical problem when we were trying to implement the counting of the score : we were using a condition but the score was still going negative while it should not have. We solved it by : putting parameters in a function with the add event listener
+We encountered several small issues regarding the JS part, such as : a logical problem when we were trying to implement the counting of the score : we were using a condition but the score was still going negative while it should not have. We solved another problem by : putting parameters in a function with the add event listener
 
 For the CSS part everything was running smoothly exept maybe for some parts such as the centering of the "cookie". 
 
@@ -97,19 +97,19 @@ feel free
 
 ## Creators
 
-Melissa Fruit
+[Melissa Fruit] (https://github.com/Melissa-Fruit)
 
-Phuong Dat Tran 
+[Phuong Dat Tran ] (https://github.com/phuongdattran)
 
-Bastien Deresteau
+[Bastien Deresteau] (https://github.com/loonyT)
 
 ## Thanks
 
-thanks to [Ismaestro](https://github.com/Ismaestro) for the README template. 
+Thanks to [Ismaestro](https://github.com/Ismaestro) for the README template. 
 
 
 ## Copyright and license
 
- Code released under the [MIT License](https://reponame/blob/master/LICENSE).
+ Code released under the MIT License.
 
 
