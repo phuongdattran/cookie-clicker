@@ -1,4 +1,6 @@
-# ![Mike clicker](https://phuongdattran.github.io/cookie-clicker/)
+# Mike clicker
+
+ [Mike clicker](https://phuongdattran.github.io/cookie-clicker/ “Mike Clicker”) 
 
 
 ## Table of contents
@@ -78,9 +80,9 @@ The project is done but we are always open to any kind of suggestions to improve
 
 ## Documentation
 
-{Documentation MDN related to Javascript }  (#https://developer.mozilla.org/en-US/docs/Web/JavaScript )
-{Documentation W3C retalted to Javascript}      (#https://www.w3schools.com/js/)                                        
-{Link towards the assignment}                    (#https://github.com/becodeorg/BXL-Swartz-3-21/blob/master/05-Javascript/cookieClicker.md                           )
+{Documentation MDN related to Javascript }  (https://developer.mozilla.org/en-US/docs/Web/JavaScript )
+{Documentation W3C retalted to Javascript}  (https://www.w3schools.com/js/)                                        
+{Link towards the assignment}   (https://github.com/becodeorg/BXL-Swartz-3-21/blob/master/05-Javascript/cookieClicker.md)
 
 ## Bugs and feature requests
 
