@@ -16,7 +16,7 @@ let boostCost = 100;
 let boostOn = false;
 let currentTime = 0;
 let timer;
-let autoCost = 200;
+let autoCost = 2000;
 multi.disabled = true;
 bonus.disabled = true;
 auto.disabled = true;
@@ -58,6 +58,7 @@ function autoIncrement() {
     autoOn = true;
     label.innerHTML = parseInt(label.innerHTML) - autoCost;
     setInterval(increment, 1000);
+    auto.disabled = true;
   }
 }
 
@@ -90,7 +91,7 @@ function boost() {
 }
 
 function buttonDisable(button, cost) {
-  if (parseInt(label.innerHTML) >= cost) {
+  if (parseInt(label.innerHTML) >= cost && autoOn == false) {
     button.removeAttribute("disabled");
   } else {
     button.disabled = true;
@@ -112,6 +113,6 @@ bonus.addEventListener("click", () => {
 click.addEventListener("click", () => {
   buttonDisable(auto, autoCost);
 });
-auto.addEventListener("click", () => {
+/*auto.addEventListener("click", () => {
   buttonDisable(auto, autoCost);
-});
+});*/
