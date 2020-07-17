@@ -60,7 +60,6 @@
 }
 /*end mediaqueries*/
 /* Css for all */
-
 body {
   margin: 0px;
   padding: 0px;
@@ -80,12 +79,7 @@ h1 {
   color: white;
   letter-spacing: 5px;
 }
-/* Css for img */
-img {
-  width: 50%;
-  height: 50%;
-  text-align: center;
-}
+
 /* Css for button */
 button {
   margin: 20px;
@@ -115,6 +109,14 @@ button {
 #multi {
   display: block;
   margin: 10px auto;
+}
+
+#click:hover {
+  -webkit-animation: rotate 1s linear infinite;
+}
+
+#click:active {
+  -webkit-animation: zoom 0.3s linear infinite;
 }
 
 /* Css by class */
@@ -280,13 +282,7 @@ button {
   }
 }
 
-#click:hover {
-  -webkit-animation: rotate 1s linear infinite;
-}
 /* Css animation and keyframes for zoom */
-#click:active {
-  -webkit-animation: zoom 0.3s linear infinite;
-}
 @-webkit-keyframes zoom {
   0% {
     -webkit-transform: scale(1, 1);
