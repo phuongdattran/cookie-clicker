@@ -14,7 +14,7 @@ let autoOn = false;
 let bonus = document.getElementById("bonus");
 let boostCost = 100;
 let boostOn = false;
-let currentTime=0;
+let currentTime = 0;
 let timer;
 let autoCost = 200;
 multi.disabled = true;
@@ -44,13 +44,13 @@ function increment() {
     label.innerHTML =
       parseInt(label.innerHTML) + multiplier * (counterMulti - 1);
   } else if (multiOn == false && boostOn == true) {
-    label.innerHTML = parseInt(label.innerHTML) + Math.pow(2,boostCounter);
+    label.innerHTML = parseInt(label.innerHTML) + Math.pow(2, boostCounter);
   } else if (multiOn == true && boostOn == true) {
     label.innerHTML =
-      parseInt(label.innerHTML) + (multiplier * (counterMulti - 1))*Math.pow(2,boostCounter);
+      parseInt(label.innerHTML) +
+      multiplier * (counterMulti - 1) * Math.pow(2, boostCounter);
   }
 }
-
 
 auto.addEventListener("click", autoIncrement);
 function autoIncrement() {
@@ -67,25 +67,25 @@ function boost() {
     label.innerHTML = parseInt(label.innerHTML) - boostCost;
     boostOn = true;
     boostCounter++;
-    boostCost = boostCost*10;
+    boostCost = boostCost * 10;
     document.getElementById("costBonus").innerHTML = boostCost;
-    currentTime+=30;
+    currentTime = 30;
     clearInterval(timer);
     timer = setInterval(() => {
       if (currentTime > 0) {
         currentTime = currentTime - 1;
         bonus.innerHTML = "Time left : " + currentTime;
-        console.log(currentTime);}
-      else {
+        console.log(currentTime);
+      } else {
         bonus.innerHTML = "Bonus";
         boostOn = false;
         boostCost = 100;
         document.getElementById("costBonus").innerHTML = 100;
-        if (boostCounter>0)
-        {boostCounter -= 1;}
+        if (boostCounter > 0) {
+          boostCounter -= 1;
+        }
       }
-       }, 1000);
-
+    }, 1000);
   }
 }
 
