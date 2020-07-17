@@ -1,19 +1,6 @@
 # cookie-clicker
-<p align="center">
-  <a href="https://example.com/">
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f76c924368125.56333075b9d10.jpg" alt="Logo" width=200 height=200>
-  </a>
 
-
-
-  <p align="center">
-    Cookie Clicker
-    <br>
-    <a href="https://reponame/issues/new?template=bug.md">Report bug</a>
-    ·
-    <a href="https://reponame/issues/new?template=feature.md&labels=feature">Request feature</a>
-  </p>
-</p>
+![Mike clicker](https://phuongdattran.github.io/cookie-clicker/)
 
 
 ## Table of contents
@@ -25,6 +12,7 @@
 - [Contributing](#contributing)
 - [Creators](#creators)
 - [Thanks](#thanks)
+- [Workflow](#workflow)
 - [Copyright and license](#copyright-and-license)
 
 
@@ -77,6 +65,12 @@ Implement yet another improvement to buy, the bonus. It should grant the player 
 Step 12: deactivate the buttons
 
 Make it so that, if the player doesn’t have the points to purchase a multiplier, an auto-click or an other bonus, he can’t.
+
+
+## Workflow
+
+First, we had a small talk to discuss who's gonna do what. We agreed that Phuong would be project supervisor. 
+Melissa did the CSS part and Phuong focused on the Javascript. It took a lot of time to debug but in the end we managed to do almost everything that we wanted to. Bastien did a bit of CSS and a bit of Javascript as well as the README. 
 
 
 
